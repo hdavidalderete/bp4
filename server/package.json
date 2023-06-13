@@ -1,0 +1,23 @@
+{
+  "name": "bp4",
+  "version": "1.0.0",
+  "description": "nodejs server",
+  "main": "index.js",
+  "author": "david alderete",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon index.js",
+    "lint": "eslint --fix --ext .js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0"
+  }
+}

@@ -1,3 +1,7 @@
-<p>
-  client-edit works!
-</p>
+<div class="container">
+  <app-header-title
+    [title]="'Edit Client'"
+    (backEvent)="goBack()"
+  ></app-header-title>
+  <app-form [user]="client" (newUserEvent)="addNewUser($event)"></app-form>
+</div>

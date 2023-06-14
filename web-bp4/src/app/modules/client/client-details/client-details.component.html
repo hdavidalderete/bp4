@@ -1,3 +1,7 @@
-<p>
-  client-details works!
-</p>
+<div class="container">
+  <app-header-title
+    [title]="'Details Client'"
+    (backEvent)="goBack()"
+  ></app-header-title>
+  <app-form [user]="client" [isShow]="true"></app-form>
+</div>

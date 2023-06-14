@@ -1,0 +1,12 @@
+table {
+  width: 100%;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.button-add {
+  float: right;
+  margin-bottom: 10px;
+}

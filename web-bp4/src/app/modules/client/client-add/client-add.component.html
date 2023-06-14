@@ -1,3 +1,7 @@
-<p>
-  client-add works!
-</p>
+<div class="container">
+  <app-header-title
+    [title]="'Add Client'"
+    (backEvent)="goBack()"
+  ></app-header-title>
+  <app-form (newUserEvent)="addNewUser($event)"></app-form>
+</div>

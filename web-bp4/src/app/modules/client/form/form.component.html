@@ -1,0 +1,43 @@
+
+<form class="form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input [disabled]="isShow" matInput formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Lastname</mat-label>
+    <input [disabled]="isShow" matInput formControlName="lastName">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput type="email" formControlName="email">
+  </mat-form-field>
+
+
+  <mat-form-field>
+    <mat-label>Birthdate</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="birthdate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Address</mat-label>
+    <input matInput formControlName="address">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>CUIT</mat-label>
+    <input matInput formControlName="cuit">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Cellphone</mat-label>
+    <input matInput formControlName="cellPhone">
+  </mat-form-field>
+
+  <button *ngIf="!isShow" class="button-form" mat-raised-button color="primary" type="submit">Submit</button>
+</form>
